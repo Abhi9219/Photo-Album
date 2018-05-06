@@ -1,0 +1,50 @@
+.subscript {
+    margin-top: 30px;
+}
+
+#thumbWrapper {
+    width: 940px;
+    overflow: auto;
+}
+
+#thumbList {
+    white-space: nowrap;
+    margin: 0px;
+    
+}
+
+#thumbList li {
+    display: inline;
+    list-style-position: inside;
+    list-style-type: none;
+    padding-left: 2px;
+    padding-right: 2px;
+    cursor: pointer;
+}
+
+#thumbList li:hover {
+    opacity: 0.5;
+   
+}
+
+#albumImage {
+    width: 600px;
+    padding-left: 160px;
+    padding-right: 160px;
+    margin-bottom: 10px;
+
+}
+
+#albumImage img{
+    border: 10px solid white;
+    border-radius: 4px;
+    margin: auto;
+    display: block; 
+}
+
+h5 {
+    padding-left: 170px;
+}
+.clear {
+    clear: both;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="albumModel">
+    <head>
+        <meta charset="utf-8"/>
+        <title>College Album</title>
+        <link rel="stylesheet" href="/CSS/album.css" />
+        <link rel="stylesheet" href="/CSS/bootstrap.min.css" />
+    </head>
+    <body >
+        <div class="container">
+           <div class="navbar">
+             <div class="navbar-inner">
+                 <ul class="nav">
+                     <li><h1 style="padding-left: 20px;">College Album</h1></li>
+                     <li class="subscript"><sub class="subscript">Remember College Days</sub></li>
+                 </ul>
+             </div> 
+           </div>
+            <div class="clear"></div>
+            
+           <div ng-controller="albumController">
+               <div id="imageDesc">
+                   <h5>{{currentImage.description}}</h5>
+               </div>
+               <div id="albumImage">
+                    <img ng-src="{{currentImage.image}}" alt="{{currentImage.description}}" >
+               </div>
+                <div id="thumbWrapper">
+                   <ul id="thumbList">
+                      <li ng-repeat= "image in images" ng-click="setCurrentImage(image)">
+                          <img ng-src="{{image.thumbnail}}" alt="{{image.description}}" width="200px" height="200px" />
+                       </li>
+                   </ul>
+                </div>
+           </div>
+        </div>
+        <script src="/JS/angular.js"></script>
+        <script src="/JS/albumModel.js"></script>
+        <script src="/JS/albumController.js"></script>
+        <script src="/JS/underscore-min.js"></script>
+    </body>
+</html>
